@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--James Brown / 12-15-2022 / Module 11 Programming Assignment-->
+    <title>CSD 360 - Module 11 Assignment</title>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <meta name="description" content="An assignment for CSD 360 Development with JavaScript" />
+    <meta name="keywords" content="web, development, javascript, csd, assignment" />
+    <meta name="robots" content="nofollow" />
+    <meta name="pragma" content="no-cache" />
+    <link rel="stylesheet" href="Brown_Mod_11.css">
+    <link rel="stylesheet" href="transfonter/stylesheet.css">
+  </head>
+  <body>
+    <h4>
+        CSD 360 Interactive Development with JavaScript<br>
+        Module 11 Programming Assignment<br>
+        12-15-2022
+    </h4>
+    <div id="root">
+        <h1>My Resource Gallery</h1>
+        <p id="intro">
+            The group of visuals below is a collection of graphics I've created and pictures that I've used on different assignments and projects.<br>
+            Click on the smaller pictures to see an enlarged view of each. 
+        </p>
+        <script>
+            function displayImage(imageFile){
+            var largerImage = document.getElementById("mainImage");
+            var newNode = document.createElement("img");
+            newNode.id = "mainImage";
+            newNode.src = imageFile;
+            newNode.alt = "Large Image";
+            newNode.className = "mainImage";
+            newNode.style.width = "400px";
+            newNode.style.height = "300px";
+            largerImage.parentNode.replaceChild(newNode, largerImage);
+           }
+
+           let caption;
+           function showWoodCaption() {
+           caption = "Cartoon-like, broken wood pieces.  Used for Downtown Diner<br> assignment in INFO 1311 - Web Page Creation.";
+           document.getElementById('describe_content').innerHTML = caption;
+           document.getElementById('mainImage').style.backgroundColor = "white";
+           } 
+           function showCoastCaption() {
+           caption = "A beautiful pic of a coastal view.  Also used for an assignment<br> in INFO 1311.";
+           document.getElementById('describe_content').innerHTML = caption;
+           }
+           function showColoCaption() {
+           caption = "This is a pic of a mountain range in Colorado, another<br> resource used in INFO 1311.";
+           document.getElementById('describe_content').innerHTML = caption;
+           }
+           function showDinerCaption() {
+           caption = "Downtown Diner logo I created for the INFO 1311 assignment.";
+           document.getElementById('describe_content').innerHTML = caption;
+           document.getElementById('mainImage').style.backgroundColor = "white";
+           }
+           function showJavaCaption() {
+           caption = "An experimental Java logo I made for a portfolio website.";
+           document.getElementById('describe_content').innerHTML = caption;
+           document.getElementById('mainImage').style.backgroundColor = "white";
+           }
+           function showJayCaption() {
+           caption = "A pic of myself studying, with an added filter.";
+           document.getElementById('describe_content').innerHTML = caption;
+           }
+           function showMCLogoCaption() {
+           caption = "One of three Jay Money logos.  This was used on the website<br> jaysmuzic.com.";
+           document.getElementById('describe_content').innerHTML = caption;
+           }
+           function showLighthouseCaption() {
+           caption = "A picture of a lighthouse which was used for a chapter<br> assignment in INFO 1311.";
+           document.getElementById('describe_content').innerHTML = caption;
+           }
+           function showLoungeCaption() {
+           caption = "This logo was created for an assignment in INFO 1311,<br> where we had to name and create our own co-working space.";
+           document.getElementById('describe_content').innerHTML = caption;
+           }
+           function showPlazaCaption() {
+           caption = "This is a pic of an empty building at the Sorenson Parkway<br> Plaza in Omaha.  This was used as part of the co-working<br> space assignment in INFO 1311.";
+           document.getElementById('describe_content').innerHTML = caption;
+           }
+           function showBooksCaption() {
+           caption = "A pic of one of my laptops and my favorite textbooks!<br>  This was used for a portfolio site.";
+           document.getElementById('describe_content').innerHTML = caption;
+           }
+           function showLocustCaption() {
+           caption = "An old building on the corner of 16th and Locust Street in<br> Omaha.  This was used for the Downtown Diner assignment.";
+           document.getElementById('describe_content').innerHTML = caption;
+           }
+        </script>
+        <table>
+            <tr>
+                <td rowspan="4">
+                    <img src="images/16th_and_Locust_200.gif" id="mainImage" alt="old building" width="400px" height="300px"
+                    onload="showLocustCaption()">
+                </td>
+                <td>
+                    <img src="images/broken_wood_300.gif" id="woodpic" alt="broken wood" width="100px" height="100px" 
+                    onclick="displayImage('images/broken_wood_300.gif'); showWoodCaption()">
+                </td>
+                <td>
+                    <img src="images/coast.jpg" id="coastpic" alt="coastal view" width="100px" height="100px" 
+                    onclick="displayImage('images/coast.jpg'); showCoastCaption()">
+                </td>
+                <td>
+                    <img src="images/colorado.jpg" id="coloradopic" alt="colorado" width="100px" height="100px"
+                    onclick="displayImage('images/colorado.jpg'); showColoCaption()">
+                </td>
+                <td>
+                    <img src="images/diner_logo_700.gif" id="dinerpic" alt="downtown diner logo" width="100px" height="100px"
+                    onclick="displayImage('images/diner_logo_700.gif'); showDinerCaption()">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="images/java_logo_200.gif" id="javapic" alt="java logo" width="100px" height="100px"
+                    onclick="displayImage('images/java_logo_200.gif'); showJavaCaption()">
+                </td>
+                <td>
+                    <img src="images/jay_concentrate_pic_200.gif" id="jaypic" alt="jay concentrating" width="100px" height="100px"
+                    onclick="displayImage('images/jay_concentrate_pic_200.gif'); showJayCaption()">
+                </td>
+                <td>
+                    <img src="images/jay_logo.jpg" id="jaypic2" alt="jay money logo" width="100px" height="100px" 
+                    onclick="displayImage('images/jay_logo.jpg'); showMCLogoCaption()">
+                </td>
+                <td>
+                    <img src="images/lighthouseisland.jpg" id="lighthousepic" alt="lighthouse" width="100px" height="100px"
+                    onclick="displayImage('images/lighthouseisland.jpg'); showLighthouseCaption()">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="images/lounge_logo.jpg" id="loungepic" alt="digital lounge logo" width="100px" height="100px"
+                    onclick="displayImage('images/lounge_logo.jpg'); showLoungeCaption()">
+                </td>
+                <td>
+                    <img src="images/sorensonSite.jpg" id="sorensonpic" alt="sorenson plaza building" width="100px" height="100px"
+                    onclick="displayImage('images/sorensonSite.jpg'); showPlazaCaption()">
+                </td>
+                <td>
+                    <img src="images/textbook_pic_200.gif" id="textbookpic" alt="picture of textbooks" width="100px" height="100px"
+                    onclick="displayImage('images/textbook_pic_200.gif'); showBooksCaption()">
+                </td>
+                <td>
+                    <img src="images/16th_and_Locust_200.gif" id="sixteenthpic" alt="old building in Omaha" width="100px" height="100px"
+                    onclick="displayImage('images/16th_and_Locust_200.gif'); showLocustCaption()">
+                </td>
+            </tr>
+        </table>
+        <div id="description">
+            <div id="describe_content"></div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <footer>
+        <p id="copyrite">Copyright &copy; 2022 - James J Brown III</p>
+    </footer>
+  </body>
+</html>

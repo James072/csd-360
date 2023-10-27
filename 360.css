@@ -1,0 +1,28 @@
+body {
+    font-family: 'Oswald', Verdana, Arial, sans-serif;
+    background-color: #D6A800;
+}
+
+#container {
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+h1, h2, h3, h4 {
+    background-color: #3c275a;
+    color: #ffff;
+    border: 1px solid #D6A800;
+    padding: 10px;
+}
+a {
+    color: #453674;
+    text-decoration: none;
+}
+a:visited {
+    color: #000000;
+}
+a:hover {
+    background-color: #D6A800;
+    color: #4F3674;
+}

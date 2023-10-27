@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'AR DESTINE';
+    src: url('ARDESTINE.woff2') format('woff2'),
+        url('ARDESTINE.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AR BLANCA';
+    src: url('ARBLANCA.woff2') format('woff2'),
+        url('ARBLANCA.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AR DECODE';
+    src: url('ARDECODE.woff2') format('woff2'),
+        url('ARDECODE.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+

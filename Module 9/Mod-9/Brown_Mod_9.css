@@ -1,0 +1,38 @@
+body {
+    background-image: url("blackboard.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+#heading {
+    color: white;
+}
+#arraycard {
+    border: 1px solid black;
+    margin-top: 10%;
+    margin-right: 30%;
+    margin-left: 30%;
+    background-color: white;
+}
+#arrayhead {
+    border: 1px solid black;
+    text-align: center;
+}
+#array1 {
+    border: 1px solid black;
+    text-align: center;
+    font-size: 16pt;
+    padding: 2px;
+}
+#array2 {
+    border: 1px solid black;
+    text-align: center;
+    font-size: 16pt;
+    padding: 2px;
+}
+#array3 {
+    border: 1px solid black;
+    text-align: center;
+    font-size: 16pt;
+    padding: 2px;
+}

@@ -1,0 +1,26 @@
+body {
+    background-image: url('gold-dice.gif');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+h2 {
+    color: goldenrod;
+    margin-left: 52%;
+}
+h4 {
+    color: goldenrod;
+}
+form {
+    margin-left: 43%;
+    margin-top: 8%;
+}
+#diceone {
+    color: goldenrod;
+}
+#dicetwo {
+    color: goldenrod;
+}
+#total_button {
+    color: goldenrod;
+}

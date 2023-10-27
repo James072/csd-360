@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--James Brown / 10-30-2022 / Module 3 Programming Assignment-->
+    <title>Module 3 Programming Assignment</title>
+    <meta charset="utf-8">
+	  <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <meta name="description" content="An assignment for CSD 360 Development with JavaScript" />
+    <meta name="keywords" content="web, development, javascript, csd, assignment" />
+    <meta name="robots" content="nofollow" />
+    <meta name="pragma" content="no-cache" />
+    <link rel="stylesheet" href="Brown_Mod_3.css">
+	
+    <script>
+        var noShow = "she was a no-show there";
+        var makeIt = "make something happen";
+        var request = "I requested a police unit";
+        var backDoor = "snuck my son out of her back door";
+    </script>
+  </head>
+  <body>
+    <h4>CSD 360 Interactive Development with JavaScript<br>
+        Module 3 Programming Assignment<br>
+        10-30-2022</h4>
+
+    <h4 id="title">Backdoor Antics</h4>
+    <p>
+      One of the events that sparked the custody battle for my son was when my son's
+      mother did not return him from a scheduled visit.  She was also supposed to take
+      him to an appointment with the therapist, but <span id="show">_______________________</span>
+      also.  The next morning, I received a call from the CPS worker, who was called by
+      the therapist.  The CPS worker informed me that I needed to <span id="make">_______________________</span>
+      by noon, or all of her kids, including mine, would be taken into state custody.
+    </p>
+    <p>
+      It was about five minutes past noon whe the judge signed off on my emergency order
+      for temporary custody.  I immediately called the CPS worker to get her to call off 
+      the removal of the kids.  Then, I headed straight to my son's mother's house to 
+      retrieve my son, and just in case there was drama, <span id="asked">_______________________</span>
+      to meet me there.  Regardless to the police presence, a big commotion was started,
+      which distracted everyone from the fact that my son's mother and her friend <span id="sneak">_________________________</span>.  
+      I ended up getting him back the next day.
+    </p>
+
+    <p>
+      <button type="button" onclick="document.getElementById('show').innerHTML=noShow">Show</button>
+      <br>
+      <button type="button" onclick="document.getElementById('make').innerHTML = makeIt">Make</button>
+      <br>
+      <button type="button" onclick="document.getElementById('asked').innerHTML = request">Request</button>
+      <br>
+      <button type="button" onclick="document.getElementById('sneak').innerHTML = backDoor">Sneak</button>
+    </p>
+  </body>
+</html>

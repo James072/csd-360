@@ -1,0 +1,75 @@
+body {
+    background-color: lightblue;
+}
+h1 {
+    text-align: center;
+    font-family: 'AR DESTINE', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 52pt;
+}
+#intro {
+    text-align: center;
+    font-family: 'AR BLANCA', Arial, Helvetica, sans-serif;
+    font-size: 16pt;
+}
+table {
+    margin-left: 25.5%;
+}
+#describe_content {
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 45%;
+    font-family: 'AR BLANCA', Arial, Helvetica, sans-serif;
+}
+#root {
+    margin-top: 2%;
+}
+#mainImage {
+    border: 5px ridge black;
+}
+#woodpic {
+    border: 1px solid black;
+    background-color: white;
+}
+#coastpic {
+    border: 1px solid black;
+}
+#coloradopic {
+    border: 1px solid black;
+}
+#dinerpic {
+    border: 1px solid black;
+    background-color: white;
+}
+#javapic {
+    border: 1px solid black;
+    background-color: white;
+}
+#jaypic {
+    border: 1px solid black;
+}
+#jaypic2 {
+    border: 1px solid black;
+}
+#lighthousepic {
+    border: 1px solid black;
+}
+#loungepic {
+    border: 1px solid black;
+}
+#sorensonpic {
+    border: 1px solid black;
+}
+#textbookpic {
+    border: 1px solid black;
+}
+#sixteenthpic {
+    border: 1px solid black;
+}
+#copyrite {
+    font-family: 'AR DECODE', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 14pt;
+    float: right;
+    color: red;
+}

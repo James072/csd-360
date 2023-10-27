@@ -1,0 +1,36 @@
+body {
+    background-image: url(sports_field.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+h4 {
+    color: white;
+}
+#favcard {
+    width: 250px;
+    background-color: green;
+}
+#fav_title {
+    text-align: center;
+}
+#fav_content {
+    text-align: center;
+    color: white;
+}
+#favcard2 {
+    width: 250px;
+    background-color: green;
+}
+#fav_title2 {
+    text-align: center;
+}
+#fav_content2 {
+    text-align: center;
+    color: white;
+}
+#favcard, #favcard2 {
+    float: left;
+    margin: 2px;
+    margin-left: 25%;
+}

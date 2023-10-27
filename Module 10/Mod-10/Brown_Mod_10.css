@@ -1,0 +1,46 @@
+#pagebody {
+    background-color: burlywood;
+}
+#logo_1 {
+    width: 300px;
+    margin-left: 40%;
+    margin-top: 1%;
+}
+#cd_1 {
+    width: 250px;
+}
+#fig_1 {
+    width: 250px;
+}
+#cap_one {
+    font-size: 9pt;
+}
+#fig_2 {
+    width: 250px;
+}
+#boothpic {
+    width: 250px;
+    border: 1px solid black;
+}
+#cap_two {
+    font-size: 9pt;
+}
+#html_logo {
+	width: 200px;
+	height: 200px;
+	transition: width 2s, height 2s, transform 2s;
+}
+#html_logo:hover {
+	width: 300px;
+	height: 300px;
+	transform: rotate(360deg);
+}
+#cap_three {
+    font-size: 9pt;
+}
+#fig_1, #fig_2, #fig_3 {
+    float: left;
+}
+#maindiv {
+    margin-left: 19%;
+}

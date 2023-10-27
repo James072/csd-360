@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--James Brown / 12-4-2022 / Module 9 Programming Assignment-->
+    <title>CSD 360 - Module 9 Assignment</title>
+    <meta charset="utf-8">
+	  <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <meta name="description" content="An assignment for CSD 360 Development with JavaScript" />
+    <meta name="keywords" content="web, development, javascript, csd, assignment" />
+    <meta name="robots" content="nofollow" />
+    <meta name="pragma" content="no-cache" />
+    <link rel="stylesheet" href="Brown_Mod_9.css">
+  </head>
+  <body>
+    <h3 id="heading">CSD 360 Interactive Development with JavaScript<br>
+        Module 9 Programming Assignment<br>
+        12-4-2022
+    </h3>
+    <script>
+        let numbers = [0, 5, 98, -12, -83, 30, 15, -7, 0, 3, 88, -44, 0, 6, 76, 9, 27, -33, 0, -3, 22];
+
+        function counter() {
+            var count = {
+                negative: 0,
+                zero: 0,
+                positive: 0,
+            };
+
+            for(let i = 0; i < numbers.length; i++) {
+                if(numbers[i] < 0) {
+                    count.negative++;
+                }
+            }
+            document.getElementById("array1").innerHTML = "The number of array elements that are negative equate to " + count.negative;
+
+            for(let i = 0; i < numbers.length; i++) {
+                if(numbers[i] === 0) {
+                    count.zero++;
+                }
+            }
+            document.getElementById("array2").innerHTML = "There are " + count.zero + " zeros in the array of numbers";
+
+            for(let i = 0; i < numbers.length; i++) {
+                if(numbers[i] > 0) {
+                    count.positive++;
+                }
+            }
+            document.getElementById("array3").innerHTML = "The number of array elements that are positive in the array equate to " + count.positive;
+        }
+    </script>
+    <div id="arraycard">
+        <div id="arrayhead">
+            <h3>Review the array of numbers below, then press the<br>
+                button to see a breakdown of the numbers.</h3><br>
+            <input type="button" id="arrbutt" name="arraybutton" onclick="counter()" value="Count Array">
+        </div>
+        <div id="array1">
+            <p>numbers = [0, 5, 98, -12, -83, 30, 15, -7, 0, 3, 88, -44, 0, 6, 76, 9, 27, -33, 0, -3, 22]</p>
+        </div>
+        <div id="array2">
+        </div>
+        <div id="array3">
+        </div>
+    </div>
+    </body>
+</html>

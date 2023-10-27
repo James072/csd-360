@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--James Brown / 11-27-2022 / Module 7 Programming Assignment-->
+    <title>CSD 360 - Module 7 Assignment</title>
+    <meta charset="utf-8">
+	  <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <meta name="description" content="An assignment for CSD 360 Development with JavaScript" />
+    <meta name="keywords" content="web, development, javascript, csd, assignment" />
+    <meta name="robots" content="nofollow" />
+    <meta name="pragma" content="no-cache" />
+    <link rel="stylesheet" href="Brown_Mod_7.css">
+  </head>
+  <body>
+    <h4>CSD 360 Interactive Development with JavaScript<br>
+        Module 7 Programming Assignment<br>
+        11-27-2022
+    </h4>
+    <script>
+        let teams = ["Dallas Cowboys", "Kansas City Chiefs", "Nebraska Cornhuskers", "Golden State Warriors", "Brooklyn Nets", "New York Yankees", "Chicago Cubs", "Omaha Lancers", 
+                     "Creighton Bluejays", "Omaha Central Eagles"];
+        
+        function showFavs() {
+            for(let i = 0; i < teams.length; i++) {
+                document.getElementById("fav_content").innerHTML += (i + 1) + ": " + teams[i] + "<br>";
+            }
+        }
+
+        let reversedTeams = [];
+
+        function showReversed() {
+            for(let i = teams.length - 1; i >= 0; i--) {
+                reversedTeams.push(teams[i] + "<br>");
+            }
+            document.getElementById("fav_content2").innerHTML = reversedTeams;
+        }
+    </script>
+    <div id="cards">
+        <div id="favcard">
+            <div id="fav_title">
+                <h4>My Top 10 Sports Teams<br>
+                    Press the button to display the list!
+                </h4>
+                <input type="button" id="onebutt" name="button1" onclick="showFavs()" value="Favorite Teams">
+                <br>
+                <br>
+            </div>
+            <div id="fav_content">
+            </div>
+        </div>
+        <div id="favcard2">
+            <div id="fav_title2">
+                <h4>My Top 10 Sports Teams<br>
+                    In Reversed Order!
+                </h4>
+                <input type="button" id="twobutt" name="button2" onclick="showReversed()" value="Teams Reversed">
+                <br>
+                <br>
+            </div>
+            <div id="fav_content2">
+                <br>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>

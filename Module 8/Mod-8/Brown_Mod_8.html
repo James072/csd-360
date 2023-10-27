@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--James Brown / 12-15-2022 / Module 12 Programming Assignment-->
+    <title>CSD 360 - Module 12 Assignment</title>
+    <meta charset="utf-8">
+	  <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <meta name="description" content="An assignment for CSD 360 Development with JavaScript" />
+    <meta name="keywords" content="web, development, javascript, csd, assignment" />
+    <meta name="robots" content="nofollow" />
+    <meta name="pragma" content="no-cache" />
+    <link rel="stylesheet" href="Brown_Mod_8.css">
+    <!--<link rel="stylesheet" href="transfonter/stylesheet.css">-->
+  </head>
+  <body>
+    <h4>
+        CSD 360 Interactive Development with JavaScript<br>
+        Module 12 Programming Assignment Re-do<br>
+        (Module 8 Programming Assignment)<br>
+        12-17-2022
+    </h4>
+    <h1>Math Table</h1>
+    <p>In this JavaScript exercise, loop iteration will be used to display values within a table.<br>
+       The following array of numbers will be used:<br>
+       [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]<br>
+       Upon clicking the "Display Table" button, functions will be activated to display the initial<br>
+       values of the array, the square root of each value, and the value squared (power of 2) and<br>
+       cubed (power of 3).</p>
+    <input type="button" name="button1" id="tablebutton" onclick="showTable()" value="Display Table">
+    <br>
+    <div id="output_div"></div>
+    <script>
+      //declare variables
+      let outputHTML = "";
+      let numbers = [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
+      let numbers2 = [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
+      let numbers3 = [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
+      let numbers4 = [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
+      
+      let sqRoot;
+      let roundArray;
+      let pow2;
+      let pow3;
+      
+      //loop over arrays
+      outputHTML += "<table border=2px solid black>";
+      outputHTML += "<th>Initial Value</th>";
+      outputHTML += "<th>Square Root</th>";
+      outputHTML += "<th>Power of 2</th>";
+      outputHTML += "<th>Power of 3</th>";
+      function showTable() {
+        for (let i = 0; i < numbers.length; i++) {
+          outputHTML += "<tr>";
+
+          outputHTML += "<td>" + numbers[i] + "</td>";
+
+          sqRoot = Math.sqrt(numbers2[i]);
+          roundArray = sqRoot.toFixed(2);
+          outputHTML += "<td>" + roundArray + "</td>";
+
+          outputHTML += "<td>" + Math.pow(numbers3[i], 2) + "</td>";
+
+          outputHTML += "<td>" + Math.pow(numbers4[i], 3) + "</td>";
+
+          outputHTML += "</tr>"; 
+      }
+      outputHTML += "</table>";
+
+      //output HTML
+      document.getElementById('output_div').innerHTML = outputHTML;
+      }
+    </script>
+  </body>
+</html>

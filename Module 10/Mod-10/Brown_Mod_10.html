@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--James Brown / 12-7-2022 / Module 10 Programming Assignment-->
+    <title>CSD 360 - Module 10 Assignment</title>
+    <meta charset="utf-8">
+	  <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <meta name="description" content="An assignment for CSD 360 Development with JavaScript" />
+    <meta name="keywords" content="web, development, javascript, csd, assignment" />
+    <meta name="robots" content="nofollow" />
+    <meta name="pragma" content="no-cache" />
+    <link rel="stylesheet" href="Brown_Mod_10.css">
+  </head>
+  <body id="pagebody">
+    <h4 id="heading">CSD 360 Interactive Development with JavaScript<br>
+        Module 10 Programming Assignment<br>
+        12-7-2022
+    </h4>
+    <script>
+      function newImage() {
+        document.getElementById("logo_1").src = "images/j_spot_3_800.gif";
+        document.getElementById("pagebody").style.backgroundColor = "red";
+        document.getElementById("heading").style.color = "gold";
+        document.getElementById("cap_one").style.color = "white";
+        document.getElementById("cap_two").style.color = "white";
+        document.getElementById("cap_three").style.color = "white";
+      }
+      function oldImage() {
+        document.getElementById("logo_1").src = "images/j_spot_1_550.gif";
+        document.getElementById("pagebody").style.backgroundColor = "burlywood";
+        document.getElementById("heading").style.color = "black";
+        document.getElementById("cap_one").style.color = "black";
+        document.getElementById("cap_two").style.color = "black";
+        document.getElementById("cap_three").style.color = "black";
+      }
+      function seeWutang() {
+        document.getElementById("cd_1").src = "images/wu_tang.jpg";
+        document.getElementById("cap_one").innerHTML = "Wu-Tang Clan - <em>Enter The 36 Chambers</em>, another all time favorite!";
+        document.getElementById("pagebody").style.backgroundColor = "black";
+        document.getElementById("cap_one").style.color = "gold";
+        document.getElementById("cap_two").style.color = "white";
+        document.getElementById("cap_three").style.color = "white";
+        document.getElementById("heading").style.color = "white";
+      }
+      function seePE() {
+        document.getElementById("cd_1").src = "images/pe.jpg";
+        document.getElementById("cap_one").innerHTML = "Public Enemy's <em>It Takes A Nation Of Millions To Hold Us Back</em> is one " +
+                                                        "of my favorite all-time Hip Hop albums.  Hold the mouse down on the picture to " +
+                                                        "see my other favorite Hip Hop album."
+        document.getElementById("pagebody").style.backgroundColor = "burlywood";
+        document.getElementById("cap_one").style.color = "black";
+        document.getElementById("cap_two").style.color = "black";
+        document.getElementById("cap_three").style.color = "black";
+        document.getElementById("heading").style.color = "black";
+      }
+      function showHorn() {
+        document.getElementById("boothpic").src = "images/brass-trumpet.jpg";
+        document.getElementById("cap_two").innerHTML = "I started playing the trumpet in the 3rd grade and continued on through junior " +
+                                                       "high and high school, playing in marching and concert bands"
+        document.getElementById("pagebody").style.backgroundColor = "lightskyblue";
+        document.getElementById("cap_two").style.color = "red";
+        document.getElementById("cap_one").style.color = "white";
+        document.getElementById("cap_three").style.color = "white";
+        
+      }
+      function showBooth() {
+        document.getElementById("boothpic").src = "images/in_da_booth.jpg";
+        document.getElementById("cap_two").innerHTML = "Recording music has always been one of my greatest passions. Most don't know that I also play an " + 
+                                                       "instrument..."
+        document.getElementById("pagebody").style.backgroundColor = "burlywood";
+        document.getElementById("cap_two").style.color = "black";
+        document.getElementById("cap_one").style.color = "black";
+        document.getElementById("cap_three").style.color = "black";
+      }
+      function showChange() {
+        document.getElementById("cap_three").style.color = "yellow";
+        document.getElementById("pagebody").style.backgroundColor = "green";
+        document.getElementById("cap_two").style.color = "white";
+        document.getElementById("cap_one").style.color = "white";
+        document.getElementById("heading").style.color = "white";
+      }
+      function reverseChange() {
+        document.getElementById("cap_three").style.color = "black";
+        document.getElementById("pagebody").style.backgroundColor = "burlywood";
+        document.getElementById("cap_two").style.color = "black";
+        document.getElementById("cap_one").style.color = "black";
+        document.getElementById("heading").style.color = "black";
+      }
+    </script>
+    <div id="logodiv">
+      <img id="logo_1" src="images/j_spot_1_550.gif" onmouseover="newImage()" onmouseout="oldImage()">
+    </div>
+    <br>
+    <div id="maindiv">
+      <div id="pe_card">
+        <div id="pe_card_content">
+          <figure id="fig_1">
+            <img id="cd_1" src="images/pe.jpg" onmousedown="seeWutang()" onmouseup="seePE()">
+            <figcaption id="cap_one">
+              Public Enemy's <em>It Takes A Nation Of Millions To Hold Us Back</em> is one of
+              my favorite all-time Hip Hop albums.  Hold the mouse down on the picture 
+              to see my other favorite Hip Hop album.
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+      <div id="music_card">
+        <div id="music_card_content">
+          <figure id="fig_2">
+            <img id="boothpic" src="images/in_da_booth.jpg" onmouseover="showHorn()" onmouseout="showBooth()">
+            <figcaption id="cap_two">
+              Recording music has always been one of my greatest passions. Most don't know that I also play an
+              instrument...
+            </figcaption>
+          </figure
+        </div>
+      </div>
+      <div id="html_card">
+        <div id="html_card_content">
+          <figure id="fig_3">
+            <img id="html_logo" src="images/html_200.gif" onmouseover="showChange()" onmouseout="reverseChange()">
+            <figcaption id="cap_three">
+              I like to create logos and add animation to them of some sort.
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

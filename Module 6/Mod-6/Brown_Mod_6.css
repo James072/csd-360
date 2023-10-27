@@ -1,0 +1,13 @@
+body {
+    background-image: url('chalkboard.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+h4 {
+    text-align: center;
+    color: white;
+}
+#onebutt {
+    margin-left: 46%;
+}
