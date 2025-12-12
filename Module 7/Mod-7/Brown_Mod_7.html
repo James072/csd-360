@@ -14,11 +14,12 @@
   <body>
     <h4>CSD 360 Interactive Development with JavaScript<br>
         Module 7 Programming Assignment<br>
-        11-27-2022
+        11-27-2022<br><br>
+        <a id="view_code" href="Mod_7_Code.html">View Code Here</a>
     </h4>
     <script>
-        let teams = ["Dallas Cowboys", "Kansas City Chiefs", "Nebraska Cornhuskers", "Golden State Warriors", "Brooklyn Nets", "New York Yankees", "Chicago Cubs", "Omaha Lancers", 
-                     "Creighton Bluejays", "Omaha Central Eagles"];
+        let teams = ["Dallas Cowboys", "Kansas City Chiefs", "Nebraska Cornhuskers", "Golden State Warriors", "Brooklyn Nets", 
+                        "New York Yankees", "Chicago Cubs", "Omaha Lancers", "Creighton Bluejays", "Omaha Central Eagles"];
         
         function showFavs() {
             for(let i = 0; i < teams.length; i++) {
@@ -29,10 +30,13 @@
         let reversedTeams = [];
 
         function showReversed() {
+             let html = "";
+
             for(let i = teams.length - 1; i >= 0; i--) {
                 reversedTeams.push(teams[i] + "<br>");
+                html += (teams.length - i) + ": " + teams[i] + "<br>";
             }
-            document.getElementById("fav_content2").innerHTML = reversedTeams;
+            document.getElementById("fav_content2").innerHTML = html;
         }
     </script>
     <div id="cards">
